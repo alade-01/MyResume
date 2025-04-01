@@ -1,31 +1,28 @@
+/**
+ * 
+ * 
+ */
 
- /**
-  * 
-import Swiper from 'swiper';
-import 'swiper/css';
   // Import Swiper styles
 //import '../css/styles.css';
+/**
+ * import Swiper from 'swiper';
+import 'swiper/css';
+ * const swiperPortfolio = new Swiper('.portfolio__container', {
+  cssMode: true,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Swiper when the page loads
-  const swiper = new Swiper('.portfolio__container', {
-    loop: true,  // Loop slides
-    autoplay: {
-      delay: 2500, // Time between slides (2.5 seconds)
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination', // Pagination element
-      clickable: true, // Make pagination clickable
-    },
-    navigation: {
-      nextEl: '.swiper-button-next', // Next button
-      prevEl: '.swiper-button-prev', // Previous button
-    },
-  });
 });
-  */
+ * 
+ */
+
 
 
 /**
