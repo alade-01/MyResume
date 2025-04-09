@@ -38,7 +38,8 @@
 ===== BASES =====
 ------------------
 ------------------*/
-
+ 
+  
   /*=== font ===*/
 @use "bases/font";
 
@@ -48,11 +49,13 @@
   /*=== bootstrap ===*/
 @use "bases/fontawesome";
 
-  /*=== variables ===*/
-@use "bases/variables";
+
 
   /*=== color ===*/
 @use "bases/color";
+
+ /*=== variables ===*/
+ @forward "bases/variables";
 
   /*=== settings ===*/
 @use "bases/settings";

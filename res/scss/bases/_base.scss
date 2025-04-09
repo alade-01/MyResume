@@ -1,25 +1,28 @@
 /*==================== BASE ====================*/
-*{
-  box-sizing: border-box;
-  padding: 0;
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
 }
 body{
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
+  font-family: $body-font;
+  color: $text-color;
+  background-color: $body-color;
+  margin: 0 0 $header-height 0;
+  font-size: $normal-font-size;
+  transition: all 0.3s ease;
 }
 h1,
 h2,
 h3,
 h4{
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  color: $title-color-dark;
+  font-weight: $font-semi-bold;
 }
 ul{
   list-style: none;
@@ -31,3 +34,40 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+/*==================== Global Styles ====================*/
+
+/* Typographic Sizes *
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+p {
+  font-size: $normal-font-size;
+}
+
+small {
+  font-size: $smaller-font-size;
+}
+
+/* Input and Button Styles *
+input,
+textarea {
+  background-color: $input-color;
+  color: $text-color;
+}
+
+button {
+  background-color: $first-color;
+  color: #fff;
+  font-weight: $font-medium;
+  cursor: pointer;
+}*/

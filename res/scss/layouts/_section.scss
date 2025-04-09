@@ -1,3 +1,4 @@
+
 /*==================== HOME ====================*/
 .home__container{
   gap: 1rem;
@@ -12,16 +13,16 @@
     row-gap: 1rem;
     & .home__social-icon{
       font-size: 1.25rem;
-      color: var(--first-color);
+      color: $first-color;
       &:hover{
-        color: var(--first-color-alt);
+        color: $first-color-alt;
       }
     }
   }
 }
 .home__blob{
   width: 200px;
-  fill: var(--first-color);
+  fill: $first-color;
   & .home__blob-img{
     width: 170px;
   }
@@ -29,22 +30,22 @@
 .home__data{
   grid-column: 1/3;
   & .home__title{
-    font-size: var(--big-font-size);
+    font-size: $big-font-size;
   }
   & .home__subtilte{
-    font-size: var(--h3-font-size);
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
+    font-size: $h3-font-size;
+    color: $text-color;
+    font-weight: $font-medium;
+    margin-bottom: $mb-0-75;
   }
   & .home__description{
-    margin-bottom: var(--mb-2) ;
+    margin-bottom: $mb-2 ;
   }
 }
 .home__scroll{
   display: none;
   & .home__scroll-button{
-    color: var(--first-color);
+    color: $first-color;
     transition: .3s;
     &:hover{
       transform: translateY(.25rem);
@@ -53,10 +54,10 @@
       font-size: 2rem;
     }
     & .home__scrool-name{
-      font-size: var(--small-font-size);
-      color: var(--title-color);
-      font-weight:  var(--font-medium);
-      margin-right: var(--mb-0-25);
+      font-size: $small-font-size;
+      color: $title-color;
+      font-weight:  $font-medium;
+      margin-right: $mb-0-25;
     }
     & .home__scroll-arrow{
       font-size: 1.25rem;
@@ -68,9 +69,9 @@
 .about__info{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: $mb-2-5;
   & .about__info-name{
-    font-size: var(--smaller-font-size);
+    font-size: $smaller-font-size;
   }
   & .about__info-title,
   & .about__info-name{
@@ -80,7 +81,6 @@
 
   & .about__info-title{
     font-weight: bold;
-    //color: black;
     font-size: 1rem;
     }
 }
@@ -92,7 +92,7 @@
 }
 .about__description{
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: $mb-2-5;
 }
 .about__buttons{
   display: flex;
@@ -106,7 +106,7 @@
     & .skills__header{
       display: flex;
       align-items: center;
-      margin-bottom: var(--mb-2-5);
+      margin-bottom: $mb-2-5;
       cursor: pointer;
       .skills__arrow{
         margin-left: auto;
@@ -115,7 +115,7 @@
       & .skills__icon,
       & .skills__arrow{
         font-size: 2rem;
-        color: var(--first-color);
+        color: $first-color;
       }
     }
     & .skills__list{
@@ -125,17 +125,17 @@
         & .skills__titles{
           display: flex;
           justify-content: space-between;
-          margin-bottom: var(--mb-0-5);
+          margin-bottom: $mb-0-5;
           & .skills__name{
-            font-size: var(--normal-font-size);
-            font-weight: var(--font-medium);
+            font-size: $normal-font-size;
+            font-weight: $font-medium;
           }
         }
         & .skills__bar{
-          background-color: var(--first-color-lighter);
+          background-color: $first-color-lighter;
           & .skills__percentage{
             display: block;
-            background-color: var(--first-color);
+            background-color: $first-color;
             height: 5px;
             border-radius: .25rem;
           }
@@ -178,13 +178,13 @@
 }
 
 .skilss__icon{
-  margin-right: var(--mb-0-75);
+  margin-right: $mb-0-75;
   & .skills__title{
-    font-size: var(--h3-font-size);
+    font-size: $h3-font-size;
   }
   & .skills__subtitle{
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    font-size: $small-font-size;
+    color: $text-color-light;
   }
 }
 
@@ -200,52 +200,52 @@
 .qualification__tabs{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  margin-bottom: $mb-2;
   & .qualification__button:hover{
-    color: var(--first-color);
+    color: $first-color;
   }
   & .qualification__button.qualification__active{
-    color: var(--first-color);
+    color: $first-color;
   }
 }
 .qualification{
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
+  font-size: $h3-font-size;
+  font-weight: $font-medium;
   cursor: pointer;
 }
 .qualification__icon{
   font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+  margin-right: $mb-0-25;
 }
 .qualification__data{
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
   & .qualification__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
   }
   & .qualification__subtitle{
     display: inline-block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+    font-size: $small-font-size;
+    margin-bottom: $mb-1;
   }
   & .qualification__calendar{
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    font-size: $small-font-size;
+    color: $text-color-light;
   }
   & .qualification__rounder{
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--first-color);
+    background-color: $first-color;
     border-radius: 50%;
   }
   & .qualification__line{
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--first-color);
+    background-color: $first-color;
     transform: translate(6px,-7px);
   }
 }
@@ -262,7 +262,7 @@
   grid-template-columns: repeat(2, 1fr);
   & .services__content{
     position: relative;
-    background-color: var(--container-color);
+    background-color: $container-color;
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.15);
@@ -270,17 +270,17 @@
     .services__icon{
       display: block;
       font-size: 1.5rem;
-      color: var(--first-color);
-      margin-bottom: var(--mb-1);
+      color: $first-color;
+      margin-bottom: $mb-1;
     }
     .services__title{
-      font-size: var(--h3-font-size);
-      margin-bottom: var(--mb-1);
-      font-weight: var(--font-medium);
+      font-size: $h3-font-size;
+      margin-bottom: $mb-1;
+      font-weight: $font-medium;
     }
     .services__button{
       cursor: pointer;
-      font-size: var(--small-font-size);
+      font-size: $small-font-size;
       &:hover .button__icon{
         transform: translateX(.25rem);
       }
@@ -304,27 +304,27 @@
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
-  z-index:var(--z-modal);
+  z-index:$z-modal;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
   & .services__modal-content{
     position: relative;
-    background-color: var(--container-color);
+    background-color: $container-color;
     padding: 1.5rem;
     border-radius: .5rem;
     & .services__modal-title{
-      font-size: var(--h3-font-size);
-      font-weight: var(--font-medium);
-      margin-bottom: var(--mb-1-5);
+      font-size: $h3-font-size;
+      font-weight: $font-medium;
+      margin-bottom: $mb-1-5;
     }
     & .services__modal-services{
       row-gap: 1rem;
       & .services__modal-service{
         display: flex;
         & .services__modal-icon{
-          color: var(--first-color);
-          margin-right: var(--mb-0-25);
+          color: $first-color;
+          margin-right: $mb-0-25;
         }
       }
     }
@@ -333,7 +333,7 @@
       top: 1rem;
       right: 1rem;
       font-size: 1.5rem;
-      color: var(--first-color);
+      color: $first-color;
       cursor: pointer;
     }
   }
@@ -358,11 +358,11 @@
   }
   & .portfolio__data{
     & .portfolio__title{
-      font-size: var(--h3-font-size);
-      margin-bottom: var(--mb-0-5);
+      font-size: $h3-font-size;
+      margin-bottom: $mb-0-5;
     }
     & .portfolio__description{
-      margin-bottom: var(--mb-0-75);
+      margin-bottom: $mb-0-75;
     }
   }
 }
@@ -380,7 +380,7 @@
 }
 .swiper-portfolio-icon{
   font-size: 2rem;
-  color: var(--first-color);
+  color: $first-color;
 }
 .swiper-button-prev{
   left: -.5rem;
@@ -392,7 +392,7 @@
   bottom: -2.5rem;
 }
 .swiper-pagination-bullet-active{
-  background-color: var(--first-color);
+  background-color: $first-color;
 }
 .swiper-button-prev,
 .swiper-button-next,
@@ -406,15 +406,15 @@
 }
 
 .project__bg{
-  background-color: var(--first-color-second);
+  background-color: $first-color-second;
   padding-top: 3rem;
   & .project__data{
     & .project__title{
-      font-size: var(--h2-font-size);
-      margin-bottom: var(--mb-0-75);
+      font-size: $h2-font-size;
+      margin-bottom: $mb-0-75;
     }
     & .project__description{
-      margin-bottom: var(--mb-1-5);
+      margin-bottom: $mb-1-5;
     }
     & .project__title,
     & .project__description{
@@ -436,27 +436,27 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      margin-right: var(--mb-0-75);
+      margin-right: $mb-0-75;
     }
     & .testimonial__name{
-      font-size: var(--h3-font-size);
-      font-weight: var(--font-medium);
+      font-size: $h3-font-size;
+      font-weight: $font-medium;
     }
     & .testimonial__client{
-      font-size: var(--small-font-size);
-      color: var(--text-color-light);
+      font-size: $small-font-size;
+      color: $text-color-light;
     }
     & .testimonial__icon-start{
-      color: var(--first-color);
+      color: $first-color;
     }
   }
 }
 .testimonial__data{
   justify-content: space-between;
-  margin-bottom: var(--mb-1);
+  margin-bottom: $mb-1;
 }
 .testimonial__description{
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: $mb-2-5;
 }
 .swiper-container .swiper-pagination-testimonial{
   bottom: 0;

@@ -1,44 +1,42 @@
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: $first-color;
   color: #FFF;
   cursor: pointer;
   padding: 1rem;
   border-radius: .5rem;
-  //font-weight: var(--font-medium);
   font-size: 1rem;
   font-weight: bold;
   & .input--send--mail{
     cursor: pointer;
-    background-color:var(--first-color);
+    background-color:$first-color;
     border: none;
     font-size: 1rem;
-    //font-weight: bold;
     color: #FFFFFF;
     display: inline-block;
     border-radius: .5rem;
-    font-weight: var(--font-medium);
+    font-weight: $font-medium;
     &:hover{
-      background-color: var(--first-color-alt);
+      background-color: $first-color-alt;
       color: #FFFFFF;
     }
   }
   &:hover{
     & .input--send--mail{
-      background-color: var(--first-color-alt);
+      background-color: $first-color-alt;
     }
-    background-color: var(--first-color-alt);
+    background-color: $first-color-alt;
   }
   & .button__icon{
     font-size: 1.25rem;
-    margin-left: var(--mb-0-5);
+    margin-left: $mb-0-5;
     transition: .3s;
   }
 }
 .button--white{
   background-color: #ffffff;
-  color: var(--first-color);
+  color: $first-color;
   &:hover{
     background-color: #ffffff;
   }
@@ -50,10 +48,10 @@
 .button--link{
   padding: 0;
   background-color: transparent;
-  color: var(--first-color);
+  color: $first-color;
   &:hover{
     background-color: transparent;
-    color: var(--first-color-alt);
+    color: $first-color-alt;
   }
 }
 .button--small{

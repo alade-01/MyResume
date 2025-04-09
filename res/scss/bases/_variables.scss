@@ -43,15 +43,15 @@ $small-font-size: .875rem;
 $smaller-font-size: .813rem;
  */
 
-/*==================== VARIABLES CSS ====================*/
+/*==================== VARIABLES CSS ====================*
 :root {
   --header-height: 3rem ;
 
-  /*========== Colors ==========*/
-  /* Change favorite color */
+  /*========== Colors ==========*
+  /* Change favorite color *
   --hue-color: 250 ; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-  /* HSL color mode */
+  /* HSL color mode *
   --first-color: hsl(var(--hue-color),69%,61%);
   --first-color-second: hsl(var(--hue-color),69%,61%);
   --first-color-alt: hsl(var(--hue-color),57%,53%);
@@ -65,10 +65,10 @@ $smaller-font-size: .813rem;
   --scroll-bar-color: hsl(var(--hue-color),12%,90%);
   --scroll-thumb-color: hsl(var(--hue-color),12%,80%);
 
-  /*========== Font and typography ==========*/
+  /*========== Font and typography ==========*
   --body-font: 'Poppins', sans-serif;
 
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... *
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -77,12 +77,12 @@ $smaller-font-size: .813rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*========== Font weight ==========*
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
-  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  /*========== Margenes Bottom ==========*
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... *
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -92,19 +92,19 @@ $smaller-font-size: .813rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  /*========== z index ==========*
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 
-  /*==== color for the form validation ======*/
+  /*==== color for the form validation ======*
   --succes-color: #2ecc71;;
   --error-color: #e74c3c;
 }
 
-/*========== Variables Dark theme ==========*/
+/*========== Variables Dark theme ==========*
 body.dark-theme{
-  /* HSL color mode */
+  /* HSL color mode *
   --first-color-second: hsl(var(--hue-color),30%,8%);
   --title-color: hsl(var(--hue-color),8%,95%);
   --text-color: hsl(var(--hue-color),8%,75%);
@@ -114,3 +114,123 @@ body.dark-theme{
   --scroll-bar-color: hsl(var(--hue-color),12%,48%);
   --scroll-thumb-color: hsl(var(--hue-color),12%,36%);
 }
+*/
+/*==================== VARIABLES SCSS ====================*/
+
+$hue-color: 250; // Purple: 250
+
+// General Variables
+$header-height: 3rem;
+$body-font: 'Poppins', sans-serif;
+
+// Colors (Main Color Scheme)
+$first-color: hsl($hue-color, 69%, 61%);
+$first-color-alt: hsl($hue-color, 57%, 53%);
+$first-color-lighter: hsl($hue-color, 92%, 85%);
+$title-color: hsl($hue-color, 8%, 15%);
+$text-color: hsl($hue-color, 8%, 45%);
+$text-color-light: hsl($hue-color, 8%, 65%);
+$input-color: hsl($hue-color, 70%, 96%);
+$body-color: hsl($hue-color, 60%, 99%);
+$container-color: #FFF;
+$scroll-bar-color: hsl($hue-color, 12%, 90%);
+$scroll-thumb-color: hsl($hue-color, 12%, 80%);
+
+// Font and Typography
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+// Font Weights
+$font-medium: 500;
+$font-semi-bold: 600;
+
+// Margins
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+// Z-Index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// Form Validation Colors
+$succes-color: #2ecc71;
+$error-color: #e74c3c;
+
+/*==================== Dark Theme Variables ==========*/
+$first-color-dark: hsl($hue-color, 30%, 8%);
+$title-color-dark: hsl($hue-color, 8%, 95%);
+$text-color-dark: hsl($hue-color, 8%, 75%);
+$input-color-dark: hsl($hue-color, 29%, 16%);
+$body-color-dark: hsl($hue-color, 28%, 12%);
+$container-color-dark: hsl($hue-color, 29%, 16%);
+$scroll-bar-color-dark: hsl($hue-color, 12%, 48%);
+$scroll-thumb-color-dark: hsl($hue-color, 12%, 36%);
+
+
+
+/*==================== Dark Theme Styles ===================
+body.dark-theme {
+  color: $text-color-dark;
+  background-color: $body-color-dark;
+
+  h1, h2, h3, p, small, input, textarea, button {
+    color: $text-color-dark;
+  }
+
+  input,
+  textarea {
+    background-color: $input-color-dark;
+  }
+
+  button {
+    background-color: $first-color-dark;
+  }
+}
+
+/*==================== Reusable Mixins ====================
+
+@mixin transition($properties, $duration) {
+  transition: $properties $duration ease;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+/*==================== Responsive Breakpoints ====================
+
+$small-screen: 768px;
+$medium-screen: 1024px;
+
+@media screen and (max-width: $small-screen) {
+  h1 {
+    @include font-size($h1-font-size);
+  }
+
+  p {
+    @include font-size($normal-font-size);
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+  h2 {
+    @include font-size($h2-font-size);
+  }
+
+  button {
+    @include transition(background-color, 0.2s);
+  }
+}
+  =*/
